@@ -73,6 +73,7 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
   /* HSL color mode */
+  --first-color: hsl(var(--hue-color), 100%, 72%);
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -316,7 +317,7 @@ img {
 }
 
 .home__subtitle{
-  font-size: var(--h3-font-size);
+  font-size: var(0.75rem); /*      --h3-font-size(1.125rem)*/
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
@@ -1074,7 +1075,7 @@ border-radius: .5rem;
     justify-self: center;
   }
 
-  .about__container,
+  /*.about__container,*/
   .skills__container,
   .portfolio__content,
   .project__container,
@@ -1155,20 +1156,20 @@ border-radius: .5rem;
     margin-left: 3rem;
    }
 
-   .about__container{
+   /*.about__container{
     column-gap: 5rem;
-   }
+   }*/
    .about__img{
       width: 350px;
    }
    .about__description{
-    text-align: initial;
+    text-align: center; /*initial*/
    }
    .about__info{
     justify-content: space-between;
    }
    .about__buttons{
-    justify-content: initial;
+    justify-content: center;/*initial*/
    }
 
    .qualification__tabs{
