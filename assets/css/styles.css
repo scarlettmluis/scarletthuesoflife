@@ -73,12 +73,12 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color), 100%, 72%);
+  --first-color: hsl(var(--hue-color), 73%, 42%);
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --body-color: hsl(var(--hue-color), 39%, 19%);/*28,12*/
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
@@ -438,8 +438,35 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked ~ label > img {
   border-radius: .5rem;
-  transform: scale(3);
+  transform: scale(2);
   cursor: zoom-out;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 /*==================== ABOUT ====================*/
 .about__img{
@@ -785,6 +812,11 @@ input[type=checkbox]:checked ~ label > img {
 .blog__description{
   margin-bottom: var(--mb-0-75);
 }
+.blog__data{
+  justify-self: center;
+  text-align: justify; /*justify*/
+  margin-bottom: var(--mb-2-5);
+}
 .blog__container{
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
@@ -796,6 +828,17 @@ input[type=checkbox]:checked ~ label > img {
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
 }
+/*.bloggg__container{
+  /*display: block;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1rem;
+    border-radius: 1rem;
+    padding: 3rem 2.5rem 0;
+    grid-template-columns: 1fr max-content;
+    column-gap: 3rem;
+    justify-self: center;
+}*/
 
 .blog__subtitle{
   display: inline-block;
@@ -1048,13 +1091,14 @@ input[type=checkbox]:checked ~ label > img {
   transition: .4s;
 }
 
-.scrollup:hover{
-  background-color: var(--first-color-alt);
+.scrollup__icon:hover{
+  /*background-color: var(--first-color-alt);*/
+  color: var(--first-color-alt);
 }
 
 .scrollup__icon{
   font-size: 1.5rem;
-  color: #FFF;
+  color: var(--first-color);
 }
 
 /* Show scroll */
@@ -1154,6 +1198,10 @@ border-radius: .5rem;
   .home__img{
     order: 1;
     justify-self: center;
+  }
+ 
+  .skills__container{
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /*.about__container,.blog__container,*/
