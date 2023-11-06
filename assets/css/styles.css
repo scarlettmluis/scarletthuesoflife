@@ -411,18 +411,6 @@ img {
   background-color: #FFF;
 }
 
-/*.fullsize{
-  z-index: 400;
-  position: fixed;
-  justify-self: center;
-  align-self: center;
-  width: 600px;
-  max-width: 600px;
-  height: 550px;
-  cursor: zoom-out;
-  display: block;
-  top: 0%;
-}*/
 
 input[type=checkbox] {
   display: none;
@@ -438,35 +426,8 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked ~ label > img {
   border-radius: .5rem;
-  transform: scale(2);
+  transform: scale(3);
   cursor: zoom-out;
-}
-
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: rgb(255, 255, 255);
-  color: #000000;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
 /*==================== ABOUT ====================*/
 .about__img{
@@ -507,6 +468,17 @@ input[type=checkbox]:checked ~ label > img {
   display: flex;
   justify-content: center;
 }
+/*==================== RESUME ====================*/
+.resume__title{
+  font-size: var(--h1-font-size);
+  text-align: center;
+  padding-top: 5rem;
+}
+.resume__img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*==================== SKILLS ====================*/
 .skills__container{
@@ -545,7 +517,7 @@ input[type=checkbox]:checked ~ label > img {
 }
 
 .skills__list{
-  row-gap: 1.5rem;
+  row-gap: 2rem;
   padding-left: 2.7rem;
 }
 
