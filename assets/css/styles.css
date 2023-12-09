@@ -785,6 +785,7 @@ input[type=checkbox]:checked ~ label > img {
   margin-bottom: var(--mb-0-75);
 }
 .blog__data{
+  display: grid;
   justify-self: center;
   text-align: justify; /*justify*/
   margin-bottom: var(--mb-2-5);
@@ -821,6 +822,15 @@ input[type=checkbox]:checked ~ label > img {
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
+}
+.blog__link{
+  text-decoration: underline;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
+.blog__link:hover{
+  color: var(--first-color);
 }
 
 
@@ -977,6 +987,9 @@ input[type=checkbox]:checked ~ label > img {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
+.contact__subtitle:hover{
+  color: var(--first-color);
+}
 
 .contact__content{
   background-color: var(--input-color);
@@ -1044,7 +1057,7 @@ input[type=checkbox]:checked ~ label > img {
 .footer__copy{
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: var(--first-color-lighter);
   margin-top: var(--mb-3);
 }
 
@@ -1333,7 +1346,7 @@ border-radius: .5rem;
    }
 
    .footer__container{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
    }
    .footer__bg{
     padding: 3rem 0 3.5rem;
