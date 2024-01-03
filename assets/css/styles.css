@@ -555,8 +555,12 @@ input[type=checkbox]:checked ~ label > img {
 .skills__js{
   width: 60%;
 }
+/*
+.skills__react used only for the 100% fill look as dividers
+rest will be left as examples in case of change
+*/
 .skills__react{
-  width: 85%;
+  width: 100%;
 }
 
 .skills__php{
