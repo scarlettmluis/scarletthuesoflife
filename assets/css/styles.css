@@ -958,6 +958,9 @@ rest will be left as examples in case of change
 }
 
 /*==================== TESTIMONIAL ====================*/
+.testimonial__content{
+  width: 700px;
+}
 .testimonial__data,
 .testimonial__header{
   display: flex;
