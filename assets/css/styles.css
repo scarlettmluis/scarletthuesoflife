@@ -968,6 +968,8 @@ rest will be left as examples in case of change
 }
 
 /*==================== TESTIMONIAL ====================*/
+#more {display: none;}
+
 .testimonial__content{
   width: 700px;
 }
@@ -999,7 +1001,7 @@ rest will be left as examples in case of change
 }
 
 .testimonial__description{
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: 0.5rem;
 }
 
 .testimonial__icon-star{
