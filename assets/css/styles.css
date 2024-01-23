@@ -739,6 +739,11 @@ rest will be left as examples in case of change
   cursor: pointer;
   font-size: var(--small-font-size);
 }
+.service__buttons{
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
 
 .services__button:hover .button__icon{
   transform: translateX(.25rem);
