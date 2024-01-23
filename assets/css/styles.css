@@ -821,6 +821,19 @@ rest will be left as examples in case of change
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
 }
+.hblog__title{
+  display: inline-block;
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+  padding-right: 1rem;
+}
+
+.blog__sub {
+  display: block;
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-3);
+  text-align: center;
+}
 
 .blog__description{
   margin-bottom: var(--mb-0-75);
@@ -840,6 +853,29 @@ rest will be left as examples in case of change
   border-top: 1px solid #dee2e6;
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+}
+.blogg__cont{
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  gap: 5.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  display: block;
+  padding: 1rem;
+}
+.space{
+  padding-bottom: 10rem;
+}
+.blog__section{
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  padding: 1rem;
+}
+.blogg__section{
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  display: inline-flex;
   padding: 1rem;
 }
 .blog__buttons{
@@ -1067,8 +1103,9 @@ rest will be left as examples in case of change
 }
 
 .footer__logo{
-  filter: var(--white);
-  width: 350px;
+  /*filter: var(--white);*/
+  fill:none;
+  width: 300px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
@@ -1302,6 +1339,18 @@ border-radius: .5rem;
    .section__subtitle{
     margin-bottom: 4rem;
    }
+
+   .blog__subtitle{
+    margin-bottom: 1rem;
+   }
+   .blogg__cont{
+    border-top: 1px solid #dee2e6;
+    gap: 5.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    padding: 1rem;
+    /*padding-bottom: 8.5rem;*/
+  }
 
    .sections{
     padding: 3rem 0 1rem;
