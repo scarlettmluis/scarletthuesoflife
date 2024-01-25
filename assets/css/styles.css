@@ -1009,7 +1009,16 @@ rest will be left as examples in case of change
 }
 
 /*==================== TESTIMONIAL ====================*/
-#more {display: none;}
+#more, #more2, #more3,#more4 {display: none;}
+
+.see__more{
+  background: linear-gradient(180deg, #ffffffa1, #fff, #fff);
+  z-index: 1;
+}
+.see__more:after{
+  background: linear-gradient(180deg, #ffffffa1, #fff, #fff);
+  z-index: -1;
+}
 
 .testimonial__content{
   width: 700px;
