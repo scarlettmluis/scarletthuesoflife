@@ -1021,7 +1021,7 @@ rest will be left as examples in case of change
 }
 
 .testimonial__container{
-  width: 660px;
+  /*width: 660px;*/
   overflow: initial;
 }
 
