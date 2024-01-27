@@ -1020,6 +1020,11 @@ rest will be left as examples in case of change
   z-index: -1;
 }
 
+.testimonial__container{
+  width: 660px;
+  overflow: initial;
+}
+
 .testimonial__content{
   width: 700px;
 }
@@ -1039,7 +1044,13 @@ rest will be left as examples in case of change
   border-radius: 50%;
   margin-right: var(--mb-0-75);
 }
-
+.testimonial__imgDefault{
+  filter: var(--title);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: var(--mb-0-75);
+}
 .testimonial__name{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
@@ -1082,6 +1093,10 @@ rest will be left as examples in case of change
   font-weight: var(--font-medium);
 }
 
+.contact__subtitlee{/*non-click*/
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
 .contact__subtitle{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
@@ -1117,9 +1132,23 @@ rest will be left as examples in case of change
 }
 
 .footer__logo{
-  /*filter: var(--white);*/
+  filter: var(--white);
   fill:none;
-  width: 300px;
+  width: 70px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+}
+.footer__img{
+  gap: .5rem;
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  margin: initial;
+}
+.footer__title{
+  filter: var(--white);
+  fill:none;
+  width: 350px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
@@ -1509,6 +1538,16 @@ border-radius: .5rem;
    .footer__links{
     flex-direction: row;
     column-gap: 2rem;
+    padding-top: 1.5rem;
+   }
+   .footer__logo{
+    width: 70px;
+   }
+   .footer__title{
+    width: 300px;
+   }
+   .footer__img{
+    display: inline-flex;
    }
    .footer__socials{
     justify-self: flex-end;
@@ -1528,6 +1567,15 @@ border-radius: .5rem;
   .footer__container{
     padding: 0;
   }
+  .footer__logo{
+    width: 90px;
+   }
+   .footer__title{
+    width: 350px;
+   }
+   .footer__img{
+    display: inline-flex;
+   }
 
   /*.home__content{
     column-gap: 7rem;
@@ -1557,7 +1605,7 @@ border-radius: .5rem;
     right: -3.5rem;
   }
   .swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom: -4.5rem;
+    bottom: -3.0rem;
   }
 
   .contact__form{

@@ -107,6 +107,19 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
 
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
+    cssMode: true,
+    loop: false, 
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+/*let swiperTestimonial = new Swiper('.testimonial__container', {
     loop: true, 
     grabCursor: true,
     spaceBetween: 48,
@@ -121,7 +134,7 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
             slidesPerView: 2,
         }
     }
-});
+});*/
 
 function testimonial1() {
     var dots = document.getElementById("dots");
@@ -137,7 +150,7 @@ function testimonial1() {
       btnText.innerHTML = "Read less";
       moreText.style.display = "inline";
     }
-    dots,moreText,btnText =null;
+    //dots,moreText,btnText =null;
 }
 function testimonial2() {
     var dots = document.getElementById("dots2");
