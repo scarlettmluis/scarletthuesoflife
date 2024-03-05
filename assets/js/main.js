@@ -254,3 +254,27 @@ themeButton.addEventListener('click', () => {
 function zoom(element){
     element.classList.toggle('fullsize');
 }
+
+/*-----------------Message----------------*/
+function sendMail(){
+    let parms = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        project: document.getElementById("project").value,
+        description: document.getElementById("description").value,
+    }
+     var name = document.getElementById("name").value;
+     var email = document.getElementById("email").value;
+     var project = document.getElementById("project").value;
+     var description = document.getElementById("description").value;    
+
+    if (!name||!project||!description||!email.includes("@")||!email.includes(".")
+        ){
+       alert("Please fill in all fields");
+     }else {
+       emailjs.send("service_h7g894q","template_g1fi91k",parms)
+        .then(alert("Your message sent succesfully"))
+     }
+    
+}
+

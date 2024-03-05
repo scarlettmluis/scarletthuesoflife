@@ -14,6 +14,17 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Responsive Portfolio Website</title>
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                publicKey: "Jnhl5YDTG9QFfQC6e",
+            });
+        })();
+        </script>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -1653,8 +1664,7 @@
                         </div>
                     </div>
 
-                    <form class="contact__form grid"
-                    action="https://getform.io/f/a3e508f0-a89a-40f6-a2a1-c1e99a8ecaf9" method="POST" enctype="multipart/form-data">
+                    <form class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="name" class="contact__label">Name</label>
@@ -1675,7 +1685,7 @@
                         </div>
 
                         <div>
-                            <button class="button button--flex" type="submit">Send message
+                            <button class="button button--flex" onclick="sendMail()" type="submit">Send message
                                 <i class="uil uil-message button__icon"></i>
                             </button>
                            <!-- <a href="#" class="button button--flex">
