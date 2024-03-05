@@ -51,12 +51,12 @@
                                 <i class="uil uil-briefcase-alt nav__icon"></i> Services
                             </a>
                         </li>
-                        <!--<li class="nav__item">
+                        <li class="nav__item">
                             <a href="#blog" class="nav__link">
                                 <i class="uil uil-desktop nav__icon"></i> Blog
-                                --<i class="uil uil-briefcase-alt nav__icon"></i> Blog---
+                                <!--<i class="uil uil-briefcase-alt nav__icon"></i> Blog--->
                             </a>
-                        </li>---->
+                        </li>
                         <li class="nav__item">
                             <a href="#portfolio" class="nav__link">
                                 <i class="uil uil-scenery nav__icon"></i> Portfolio
@@ -110,8 +110,11 @@
                                 rel="noopener" class="home__social-icon"
                                 style="cursor: pointer;" title="Book Me">
                                 <i class="uil uil-clock"></i>
-                            </a>-->
-                            <a href="blog.html" 
+                            </a>
+                        
+                        line 117 org <a href="blog.html"
+                        -->
+                            <a href="#blog" 
                                 rel="noopener" class="home__social-icon"
                                 style="cursor: pointer;" title="My Blog">
                                 <i class="uil uil-document-layout-left"></i>
@@ -1032,16 +1035,6 @@
                                         <span class="skills__percentage skills__react"></span>
                                     </div>
                                 </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__number">55%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__python"></span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <!--==============Skills 3=================-->
@@ -1156,11 +1149,12 @@
                                         <p>Link to blog showcasing project management best practices</p>
                                     </li>-->
                                 </ul>
+                                <!------/////
                                 <div class="service__buttons">
                                     <a href="blogManag.html" class="button button--flex button--small portfolio__button">
                                              Go to category
                                              <i class="uil uil-arrow-right button__icon"></i> </a> 
-                                 </div>
+                                 </div>-->
                             </div>
                         </div>
                     </div>
@@ -1197,11 +1191,11 @@
                                         <p>Link to blogs category list</p>
                                     </li>-->
                                 </ul>
-                                <div class="service__buttons">
+                                <!--/////<div class="service__buttons">
                                     <a href="blogLife.html" class="button button--flex button--small portfolio__button">
                                              Go to category
                                              <i class="uil uil-arrow-right button__icon"></i> </a> 
-                                 </div>
+                                 </div>-->
                             </div>
                         </div>
                     </div>
@@ -1211,11 +1205,21 @@
             </section>
 
             <!--==================== BLOG ====================-->
-            <!--<section class="blog section" id="blog">
+            <section class="blog section" id="blog">
                 <h2 class="section__title">Blog</h2>
                 <span class="section__subtitle">My personal blog</span>
-            
-                <div class="portfolio__container container swiper-container">
+
+                <div class="portfolio__content grid container">
+                    <img src="assets/img/blogPhoto.jpg" alt="" style="width: auto; height:200px; object-fit:cover;" class="portfolio__img">
+                    <div class="portfolio__data">
+                      <h3 class="section__title">Coming Soon
+                        <i class="uil uil-clock clock__icon"></i>
+                    </h3>  
+                    </div>
+                    
+                </div>
+
+                <!--<div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">-->
                         <!--==================== BLOG 1====================
                         <div class="portfolio__content grid swiper-slide">
@@ -1273,7 +1277,7 @@
                    <a href="blog.html" class="button button--flex portfolio__button">See more here
                     <i class="uil uil-arrow-circle-right button__icon"></i>
                    </a> 
-                </div>-->     
+                </div>-->
 
 
                <!-- <div class="blog__container container grid">
@@ -1379,7 +1383,7 @@
 
                                     <div>
                                         <h3 class="testimonial__name">Alani Verges</h3>
-                                        <span class="testimonial__client">MIB Graduate of the University of Miami</span>
+                                        <!--<span class="testimonial__client">MIB Graduate of the University of Miami</span>-->
                                     </div>
                                 </div>
                             </div>
@@ -1418,7 +1422,7 @@
                                 course of our senior capstone design project. Her wealth of industry experience helped us learn how 
                                 to manage a design project from the ground up, and she provided both technical and project management 
                                 support over the year we worked together. Outside of our project, she provided helpful career development 
-                                tips to help guide our job search and prepare us for life after graduation</p>
+                                tips to help guide our job search and prepare us for life after graduation.</p>
                                 <!--<span id="dots2">...</span><span id="more2"></span>
                                     
                                     <button onclick="testimonial2()" id="myBtn2" class="button button--flex">Read more</button>-->
@@ -1460,6 +1464,23 @@
                                     resume development and interview preparation for my post-graduation career. To this day, Scarlet remains a 
                                     trusted mentor and life coach, contributing to my ongoing career success. She is truly exceptional.</span></p>
                                 <button onclick="testimonial3()" id="myBtn3" class="button button--flex">Read more</button>
+                        </div>
+                        <!--==================== TESTIMONIAL 5====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/testimonial5.png" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Ebony Bland</h3>
+                                        <span class="testimonial__client"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">During my college engineering capstone project, Scarlet Luis served as my mentor. She 
+                                guided my group and me through the engineering process and taught us how to work effectively in a team. Scarlet's mentorship 
+                                didn't end with the program. She continued to provide me with valuable career advice even after our project had concluded.
                         </div>
                         
                     </div>
@@ -1603,7 +1624,9 @@
 
                             <div>
                                 <h3 class="contact__title">Website</h3>
-                                <span class="contact__subtitlee">(to contain scarltettmlius)</span>
+                                <a href="https://scarlettmluis.github.io/scarletthuesoflife/" class="contact__subtitle" target="_blank" rel="noopener"> 
+                                    scarlettmluis.github.io/scarletthuesoflife/</a>
+                                <!--<span class="contact__subtitlee">scarlettmluis.github.io/scarletthuesoflife/</span>-->
                             </div>
                         </div>
 
@@ -1624,7 +1647,7 @@
                             <div>
                                 <h3 class="contact__title">Booking Page</h3>
                                 <a href="https://calendar.app.google/q3FZV9RcXt6L38n66" class="contact__subtitle" target="_blank" rel="noopener"> 
-                                    https://calendar.app.google/q3FZV9RcXt6L38n66</a>
+                                    calendar.app.google/q3FZV9RcXt6L38n66</a>
                                 <!--<span class="contact__subtitle">calendar.app.google/hzYjG4S9HHHCebWx8</span>-->
                             </div>
                         </div>

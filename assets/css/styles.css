@@ -813,6 +813,13 @@ rest will be left as examples in case of change
   overflow: initial;
 }
 
+.clock__icon{
+  display: block;
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+  font-size: 4rem;
+}
+
 .blog__img{
   width: 265px;
  /* height: 400px;
@@ -899,6 +906,9 @@ rest will be left as examples in case of change
     column-gap: 3rem;
     justify-self: center;
 }*/
+.temp__content{
+  display: block;
+}
 
 .blog__subtitle{
   display: inline-block;
@@ -1005,7 +1015,7 @@ rest will be left as examples in case of change
   filter: var(--swirl-color);
   justify-self: center;
   margin-bottom: 2.75rem;
-  margin-right: 2.5rem;
+  /*margin-right: 2.5rem;*/
 }
 
 /*==================== TESTIMONIAL ====================*/
@@ -1356,6 +1366,10 @@ border-radius: .5rem;
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
+  }
+
+  .project__img{
+    margin-right: 2.5rem;
   }
 }
 
