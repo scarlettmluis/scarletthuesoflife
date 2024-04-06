@@ -1504,10 +1504,10 @@ border-radius: .5rem;
     grid-template-columns: .5fr;
    }
 
-   .services__container{
-    grid-template-columns: repeat(3, 218px);
+   /*.services__container{
+    grid-template-columns: repeat(4, 218px);
     justify-content: center;
-   }
+   }*/
    .services__icon{
     font-size: 2rem;
    }
@@ -1603,8 +1603,9 @@ border-radius: .5rem;
   }
 
   .services__container{
-    grid-template-columns: repeat(3, 238px);
-  }
+    grid-template-columns: repeat(4, 238px);
+    justify-content: center;
+   }
 
   .portfolio__content{
     column-gap: 3rem;
